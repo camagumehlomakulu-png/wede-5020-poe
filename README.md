@@ -1,5 +1,5 @@
-# wede-5020-poe
-Your project's title
+# Project's title
+wede-5020-poe
 
 ## Student Information
 **Student number:** ST10531381 <br>
