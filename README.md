@@ -1,4 +1,4 @@
-# Project's title
+# Project Title
 wede-5020-poe
 
 ## Student Information
@@ -17,23 +17,23 @@ Folks showing up might be parents with kids, younger folks stopping by after wor
 
 A digital space helps the bakery be seen on the internet. Showcasing treats comes through vivid images and clear descriptions. Important details like location and hours appear front and center. Customers reach out easily when they want something made just for them. Getting questions about special bakes happens straight from the site.
 
-Key objectives include:
-Increasing customer awareness
-Displaying available products
-Allowing customers to request custom cakes
-Providing contact and location details
-Key performance indicators (KPIs) include:
-Website visitor count
-Customer enquiries
-Increase in sales/orders
+Key objectives include:<br>
+Increasing customer awareness<br>
+Displaying available products<br>
+Allowing customers to request custom cakes<br>
+Providing contact and location details<br>
+Key performance indicators (KPIs) include:<br>
+Website visitor count<br>
+Customer enquiries<br>
+Increase in sales/orders<br>
 
 
 ## Timeline and Milestones
 
-Week 1: Planning and research
-Week 2: Design concepts
-Week 3: Website development
-Week 4: Testing and improvements
+Week 1: Planning and research<br>
+Week 2: Design concepts<br>
+Week 3: Website development<br>
+Week 4: Testing and improvements<br>
 
 ## Sitemap
 
