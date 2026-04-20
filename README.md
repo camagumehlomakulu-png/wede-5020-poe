@@ -1,4 +1,4 @@
-# Project's title
+# Project Title
 wede-5020-poe
 
 ## Student Information
@@ -17,40 +17,44 @@ Folks showing up might be parents with kids, younger folks stopping by after wor
 
 A digital space helps the bakery be seen on the internet. Showcasing treats comes through vivid images and clear descriptions. Important details like location and hours appear front and center. Customers reach out easily when they want something made just for them. Getting questions about special bakes happens straight from the site.
 
-Key objectives include:
-Increasing customer awareness
-Displaying available products
-Allowing customers to request custom cakes
-Providing contact and location details
-Key performance indicators (KPIs) include:
-Website visitor count
-Customer enquiries
-Increase in sales/orders
+Key objectives include:<br>
+Increasing customer awareness<br>
+Displaying available products<br>
+Allowing customers to request custom cakes<br>
+Providing contact and location details<br>
+Key performance indicators (KPIs) include:<br>
+Website visitor count<br>
+Customer enquiries<br>
+Increase in sales/orders<br>
 
 
 ## Timeline and Milestones
 
-Week 1: Planning and research
-Week 2: Design concepts
-Week 3: Website development
-Week 4: Testing and improvements
+Week 1: Planning and research<br>
+Week 2: Design concepts<br>
+Week 3: Website development<br>
+Week 4: Testing and improvements<br>
 
 ## Sitemap
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ![Website Sitemap](img/sitemap.PNG) <br> (The one here is only an example, include your own site map)
+=======
+>>>>>>> 2d71be41a6d83c7a869b95d24aba2f6b509a1656
 
+[Website Sitemap](img/sitemap.PNG) <br> (The one here is only an example, include your own site map)
 ## References
 Shopify, 2023. How to Start a Clothing Brand in 2023. Available at: https://www.shopify.com/blog/start-a-clothing-line
- [Accessed 11 Apr. 2026].
+ [Accessed 11 Apr. 2026].<br>
 Nike, n.d. Nike Official Website. Available at: https://www.nike.com
- [Accessed 11 Apr. 2026].
+ [Accessed 11 Apr. 2026].<br>
 H&M, n.d. H&M Official Website. Available at: https://www.hm.com
- [Accessed 11 Apr. 2026].
+ [Accessed 11 Apr. 2026].<br>
 HubSpot, 2024. Website Design Best Practices for Modern Websites. Available at: https://blog.hubspot.com/marketing/web-design
- [Accessed 11 Apr. 2026].
+ [Accessed 11 Apr. 2026].<br>
 W3Schools, 2024. CSS Tutorial. Available at: https://www.w3schools.com/css/
- [Accessed 11 Apr. 2026].
+ [Accessed 11 Apr. 2026].<br>
 Unsplash, 2024. Free Streetwear and Fashion Images. Available at: https://unsplash.com
- [Accessed 11 Apr. 2026].
+ [Accessed 11 Apr. 2026].<br>
 
