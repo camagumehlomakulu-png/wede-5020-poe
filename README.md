@@ -1,9 +1,9 @@
-# Project Title
+# wede-5020-poe
 Your project's title
 
 ## Student Information
-**Student number:** Your student number <br>
-**Student Name:** Your full name
+**Student number:** ST10531381 <br>
+**Student Name:** Camagu Mehlomakulu
 
 ## Project Overview
 
@@ -14,8 +14,6 @@ Every morning starts with warm smells at Sweet Crumbs Bakery. Baked goods come o
 Folks showing up might be parents with kids, younger folks stopping by after work. Some come just for fresh bread straight out the oven. Others search for something special - like a cake made exactly how they want it - for birthdays or parties. Order ahead, and it will wait for them, ready on the counter.
 
 ## Website Goals and Objectives
-
-Website Goals and Objectives
 
 A digital space helps the bakery be seen on the internet. Showcasing treats comes through vivid images and clear descriptions. Important details like location and hours appear front and center. Customers reach out easily when they want something made just for them. Getting questions about special bakes happens straight from the site.
 
@@ -32,7 +30,10 @@ Increase in sales/orders
 
 ## Timeline and Milestones
 
-Pull this from your project proposal.
+Week 1: Planning and research
+Week 2: Design concepts
+Week 3: Website development
+Week 4: Testing and improvements
 
 ## Sitemap
 
