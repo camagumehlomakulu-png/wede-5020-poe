@@ -43,7 +43,7 @@ Week 4: Testing and improvements<br>
 =======
 >>>>>>> 2d71be41a6d83c7a869b95d24aba2f6b509a1656
 
-[Website Sitemap](img/sitemap.PNG) <br> (The one here is only an example, include your own site map)
+[Website Sitemap](images/sitemap.PNG) <br> (The one here is only an example, include your own site map)
 ## References
 Shopify, 2023. How to Start a Clothing Brand in 2023. Available at: https://www.shopify.com/blog/start-a-clothing-line
  [Accessed 11 Apr. 2026].<br>
