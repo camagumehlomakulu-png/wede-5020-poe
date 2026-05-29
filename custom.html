@@ -1,111 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Custom Orders - Sweet Crumbs Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Orders | Sweet Crumbs Bakery</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-    <h1>Sweet Crumbs Bakery</h1>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="products.html">Products</a> |
-        <a href="custom.html">Custom Orders</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+
+        <h1 class="logo">Sweet Crumbs Bakery</h1>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="custom.html">Custom Orders</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
     </nav>
-</header>
 
-<hr>
+</header>
 
 <main>
 
-<h2>Custom Cake Orders</h2>
-<p>Tell us what you want and we’ll bake it just for you.</p>
+    <!-- HERO / INTRO -->
+    <section class="page-hero">
 
-<p>
-We create custom cakes for birthdays, weddings, celebrations, and special events.  
-Choose your design, flavour, and size—we’ll handle the rest.
-</p>
+        <div class="section-heading">
+            <h2>Custom Cake Orders</h2>
+            <p>We create cakes designed exactly the way you imagine them.</p>
+        </div>
 
-<hr>
+    </section>
 
-<h3>Place Your Order</h3>
+    <!-- INFO SECTION -->
+    <section class="info-section">
 
-<form>
+        <article class="info-box">
 
-<p>Name:</p>
-<input type="text" name="name">
+            <p>
+                We design custom cakes for birthdays, weddings, graduations,
+                and all special occasions. Choose your flavour, size, and design —
+                and we bring your idea to life.
+            </p>
 
-<p>Email:</p>
-<input type="email" name="email">
+        </article>
 
-<p>Phone Number:</p>
-<input type="text" name="phone">
+    </section>
 
-<p>Type of Cake:</p>
-<select name="cake">
-    <option>Birthday Cake</option>
-    <option>Wedding Cake</option>
-    <option>Celebration Cake</option>
-    <option>Other</option>
-</select>
+    <!-- FORM SECTION -->
+    <section class="form-section">
 
-<p>Flavour:</p>
-<input type="text" name="flavour">
+        <h2>Place Your Order</h2>
 
-<p>Size:</p>
-<input type="text" name="size">
+        <form class="order-form">
 
-<p>Describe your design:</p>
-<textarea rows="6" cols="30"></textarea>
+            <input type="text" placeholder="Full Name" name="name" required>
 
-<br><br>
-<button type="submit">Submit Request</button>
+            <input type="email" placeholder="Email Address" name="email" required>
 
-</form>
+            <input type="tel" placeholder="Phone Number" name="phone">
 
-<hr>
+            <select name="cake-type">
+                <option>Birthday Cake</option>
+                <option>Wedding Cake</option>
+                <option>Celebration Cake</option>
+                <option>Other</option>
+            </select>
 
-<h3>Popular Custom Ideas</h3>
+            <input type="text" placeholder="Preferred Flavour" name="flavour">
 
-<ul>
-    <li>Chocolate drip birthday cake</li>
-    <li>Anime-themed cakes</li>
-    <li>Wedding tier cakes with flowers</li>
-    <li>Minimalist celebration cakes</li>
-</ul>
+            <input type="text" placeholder="Cake Size (e.g. 2-tier, 10 inch)" name="size">
 
-<hr>
+            <textarea rows="6" placeholder="Describe your cake design..." name="design"></textarea>
 
-<h3>Example Designs</h3>
+            <button type="submit" class="btn">Submit Request</button>
 
-<img src="images/custom1.jpg" width="200">
-<img src="images/custom2.jpg" width="200">
-<img src="images/custom3.jpg" width="200">
-<img src="images/custom4.jpg" width="200">
+        </form>
 
-<hr>
+    </section>
 
-<h3>How It Works</h3>
+    <!-- IDEAS SECTION -->
+    <section class="ideas-section">
 
-<p>
-1. Submit your request<br>
-2. We contact you to confirm details<br>
-3. We bake your order fresh<br>
-4. You collect or receive delivery
-</p>
+        <h2>Popular Custom Ideas</h2>
+
+        <ul class="ideas-list">
+            <li>Chocolate drip birthday cakes</li>
+            <li>Anime-themed cakes</li>
+            <li>Wedding tier cakes with flowers</li>
+            <li>Minimalist modern celebration cakes</li>
+        </ul>
+
+    </section>
+
+    <!-- IMAGES SECTION -->
+    <section class="gallery-section">
+
+        <h2>Example Designs</h2>
+
+        <div class="gallery">
+
+            <img src="images/custom1.jpg" alt="Custom cake design 1">
+            <img src="images/custom2.jpg" alt="Custom cake design 2">
+            <img src="images/custom3.jpg" alt="Custom cake design 3">
+            <img src="images/custom4.jpg" alt="Custom cake design 4">
+
+        </div>
+
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section">
+
+        <h2>How It Works</h2>
+
+        <div class="process-steps">
+
+            <p>1. Submit your request</p>
+            <p>2. We confirm your design</p>
+            <p>3. We bake your order fresh</p>
+            <p>4. You collect or receive delivery</p>
+
+        </div>
+
+    </section>
 
 </main>
 
-<hr>
-
+<!-- FOOTER -->
 <footer>
-    <p>&copy; 2026 Sweet Crumbs Bakery</p>
+
+    <p>&copy; 2026 Sweet Crumbs Bakery | Freshly baked with love every day</p>
+
 </footer>
 
 </body>
+
 </html>

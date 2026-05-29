@@ -1,0 +1,784 @@
+/* =========================
+   CSS RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root{
+    --primary:#6b3e26;
+    --secondary:#d9a066;
+    --cream:#fff8f0;
+    --accent:#f3d2c1;
+    --text:#2e1f1a;
+    --white:#ffffff;
+}
+
+/* =========================
+   BODY STYLING
+========================= */
+
+body{
+    font-family:'Poppins', sans-serif;
+    color:var(--text);
+    line-height:1.7;
+    background-color:var(--cream);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1,h2,h3{
+    font-family:'Playfair Display', serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.5rem 8%;
+    background:rgba(255,255,255,0.95);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    color:var(--primary);
+    font-size:2rem;
+}
+
+.nav-links{
+    display:flex;
+    gap:2rem;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height:90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)),
+    url('../images/bakery-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:2rem;
+}
+
+.hero-content{
+    max-width:700px;
+    color:white;
+}
+
+.hero h2{
+    font-size:4rem;
+    margin-bottom:1rem;
+}
+
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:2rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    display:inline-block;
+    padding:1rem 2rem;
+    background:var(--secondary);
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:var(--primary);
+    transform:translateY(-3px);
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section{
+    padding:5rem 8%;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:3rem;
+}
+
+.section-heading h2{
+    font-size:2.5rem;
+    color:var(--primary);
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-preview{
+    background:#fffdf9;
+}
+
+.about-text{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+}
+
+.product-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:1.5rem;
+}
+
+/* =========================
+   CUSTOM ORDER SECTION
+========================= */
+
+.custom-order-section{
+    background:linear-gradient(to right,#f3d2c1,#fff8f0);
+    text-align:center;
+}
+
+.custom-content{
+    max-width:700px;
+    margin:auto;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-preview{
+    background:#fffdf9;
+    text-align:center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:2rem;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero h2{
+        font-size:2.5rem;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero{
+        height:75vh;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    section{
+        padding:3rem 1.5rem;
+    }
+
+}
+
+/* =========================
+   ABOUT PAGE HERO
+========================= */
+
+.about-hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url('../images/about-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.page-hero-content{
+    background:rgba(255,255,255,0.12);
+    padding:2rem;
+    border-radius:20px;
+    backdrop-filter:blur(3px);
+}
+.page-hero-content h2{
+    color:#fff8f0;
+}
+
+.page-hero-content p{
+    color:#f5e6dc;
+}
+}
+
+.page-hero{
+    height:60vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:2rem;
+}
+
+.page-hero-content h2{
+    font-size:3.5rem;
+    margin-bottom:1rem;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section{
+    background:#fffdf9;
+}
+
+.about-container{
+    display:flex;
+    align-items:center;
+    gap:4rem;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-text-content{
+    flex:1;
+}
+
+.about-text-content h2{
+    color:var(--primary);
+    margin-bottom:1rem;
+    font-size:2.5rem;
+}
+
+/* =========================
+   GOALS SECTION
+========================= */
+
+.mission-section{
+    background:linear-gradient(to right,#fff8f0,#f3d2c1);
+}
+
+.goals-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+}
+
+.goal-card{
+    background:white;
+    padding:2rem;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.goal-card:hover{
+    transform:translateY(-8px);
+}
+
+.goal-card h3{
+    color:var(--primary);
+    margin-bottom:1rem;
+}
+
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+
+.experience-section{
+    background:
+    linear-gradient(rgba(255,248,240,0.9),
+    rgba(255,248,240,0.9)),
+    url('../images/pastry-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+}
+
+.experience-content{
+    max-width:800px;
+    margin:auto;
+}
+
+.experience-content h2{
+    color:var(--primary);
+    margin-bottom:1rem;
+    font-size:2.5rem;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+    .about-container{
+        flex-direction:column;
+    }
+
+    .page-hero-content h2{
+        font-size:2.5rem;
+    }
+
+}
+
+/* =========================
+   PRODUCTS PAGE HERO
+========================= */
+
+.products-hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url('../images/products-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* =========================
+   MENU INTRO
+========================= */
+
+.menu-intro{
+    text-align:center;
+    background:#fffdf9;
+}
+
+/* =========================
+   PRODUCT CATEGORY
+========================= */
+
+.product-category{
+    background:#fff8f0;
+}
+
+.bakery-background{
+    background:
+    linear-gradient(rgba(255,248,240,0.92),
+    rgba(255,248,240,0.92)),
+    url('../images/bread-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* =========================
+   PRODUCT PRICE
+========================= */
+
+.price{
+    font-size:1.2rem;
+    font-weight:600;
+    color:var(--primary);
+    margin:0.8rem 0;
+}
+
+/* =========================
+   BEST SELLER BADGE
+========================= */
+
+.best-seller{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    background:var(--secondary);
+    color:white;
+
+    padding:0.5rem 1rem;
+
+    border-radius:30px;
+
+    font-size:0.8rem;
+    font-weight:600;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card{
+    position:relative;
+}
+
+/* =========================
+   SMALL BUTTONS
+========================= */
+
+.small-btn{
+    padding:0.7rem 1.4rem;
+    font-size:0.9rem;
+}
+/* =========================
+   CUSTOM ORDERS PAGE
+========================= */
+
+/* Page hero */
+.page-hero{
+    padding:4rem 8%;
+    text-align:center;
+    background:linear-gradient(
+        rgba(255,248,240,0.9),
+        rgba(243,210,193,0.6)
+    );
+}
+
+/* Info section */
+.info-section{
+    padding:3rem 8%;
+    background:var(--cream);
+}
+
+.info-box{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+/* =========================
+   ORDER FORM SECTION
+========================= */
+
+.form-section{
+    padding:5rem 8%;
+    background:white;
+    text-align:center;
+}
+
+.form-section h2{
+    color:var(--primary);
+    margin-bottom:2rem;
+    font-size:2.2rem;
+}
+
+.order-form{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea{
+    padding:0.9rem 1rem;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-family:'Poppins', sans-serif;
+    font-size:1rem;
+    transition:0.3s;
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus{
+    outline:none;
+    border-color:var(--secondary);
+    box-shadow:0 0 8px rgba(217,160,102,0.4);
+}
+
+.order-form textarea{
+    resize:none;
+}
+
+/* =========================
+   IDEAS SECTION
+========================= */
+
+.ideas-section{
+    padding:5rem 8%;
+    background:var(--accent);
+    text-align:center;
+}
+
+.ideas-section h2{
+    color:var(--primary);
+    margin-bottom:2rem;
+    font-size:2.2rem;
+}
+
+.ideas-list{
+    max-width:600px;
+    margin:auto;
+    list-style:none;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:0.8rem;
+}
+
+.ideas-list li{
+    background:white;
+    padding:1rem;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   GALLERY SECTION
+========================= */
+
+.gallery-section{
+    padding:5rem 8%;
+    background:var(--cream);
+    text-align:center;
+}
+
+.gallery-section h2{
+    font-size:2.2rem;
+    color:var(--primary);
+    margin-bottom:2rem;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:1rem;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* =========================
+   PROCESS SECTION
+========================= */
+
+.process-section{
+    padding:5rem 8%;
+    background:white;
+    text-align:center;
+}
+
+.process-section h2{
+    font-size:2.2rem;
+    color:var(--primary);
+    margin-bottom:2rem;
+}
+
+.process-steps{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.process-steps p{
+    background:var(--cream);
+    padding:1rem;
+    border-radius:10px;
+    font-weight:500;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width:768px){
+
+    .page-hero{
+        padding:3rem 5%;
+    }
+
+    .form-section,
+    .ideas-section,
+    .gallery-section,
+    .process-section{
+        padding:3rem 5%;
+    }
+
+    .gallery img{
+        height:180px;
+    }
+}
+/* =========================
+   CONTACT PAGE STYLES
+========================= */
+
+/* Contact info box */
+.contact-section{
+    padding:4rem 8%;
+    background:var(--cream);
+    text-align:center;
+}
+
+.contact-box{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:2rem;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-box h3{
+    margin-bottom:1rem;
+    color:var(--primary);
+}
+
+/* Contact form */
+.contact-form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:0.9rem;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-family:'Poppins', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border-color:var(--secondary);
+    box-shadow:0 0 8px rgba(217,160,102,0.3);
+}
+
+/* Opening hours */
+.hours-section{
+    padding:4rem 8%;
+    background:var(--accent);
+    text-align:center;
+}
+
+.hours-box{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:2rem;
+    border-radius:12px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+    .contact-section,
+    .form-section,
+    .hours-section{
+        padding:3rem 5%;
+    }
+}

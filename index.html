@@ -1,104 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Website Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Crumbs Bakery</title>
+
+    <!-- Website Title -->
+    <title>Sweet Crumbs Bakery | Home</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="home-page">
 
-<!-- HEADER -->
-<header>
-    <h1>Sweet Crumbs Bakery</h1>
+    <!-- HEADER SECTION -->
+    <header>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="products.html">Products</a> |
-        <a href="custom.html">Custom Orders</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
 
-<hr>
+            <!-- Bakery Logo/Name -->
+            <h1 class="logo">Sweet Crumbs Bakery</h1>
 
-<hr>
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="custom.html">Custom Orders</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-<!-- HERO SECTION -->
-<main>
-    <h2>Freshly Baked Happiness, Made Just for You</h2>
-    <p>From everyday treats to special occasions, we create delicious baked goods that bring people together.</p>
-    <p><a href="products.html"><button>View Our Products</button></a></p>
+        </nav>
 
-    <hr>
+    </header>
 
-    <!-- BUSINESS SUMMARY -->
-    <h2>About Sweet Crumbs Bakery</h2>
-    <p>
-        Sweet Crumbs Bakery is a home-style bakery dedicated to crafting high-quality cakes, pastries, 
-        and desserts using fresh ingredients. We specialize in both ready-made treats and custom creations 
-        designed to match your taste and occasion. Whether it's a birthday, celebration, or just a craving, 
-        we make every bite memorable.
-    </p>
+    <!-- MAIN WEBSITE CONTENT -->
+    <main>
 
-    <hr>
+        <!-- HERO SECTION -->
+        <section class="hero">
 
-    <!-- SPECIALS SECTION -->
-    <h2>Our Specials</h2>
+            <div class="hero-content">
+                <h2>Freshly Baked Happiness, Made Just for You</h2>
 
-    <table>
-        <tr>
-            <td>
-                <img src="images/cake.jpg" alt="Custom Cake" width="200"><br>
-                <strong>Custom Celebration Cakes</strong><br>
-                Perfect for birthdays and events.
-            </td>
+                <p>
+                    From everyday treats to unforgettable celebrations,
+                    Sweet Crumbs Bakery creates delicious handcrafted baked goods
+                    made with love and the freshest ingredients.
+                </p>
 
-            <td>
-                <img src="images/cupcakes.jpg" alt="Cupcakes" width="200"><br>
-                <strong>Fresh Cupcakes</strong><br>
-                Soft, fluffy, and full of flavor.
-            </td>
-        </tr>
+                <a href="products.html" class="btn">
+                    View Our Products
+                </a>
+            </div>
 
-        <tr>
-            <td>
-                <img src="images/pastries.jpg" alt="Pastries" width="200"><br>
-                <strong>Assorted Pastries</strong><br>
-                A variety of sweet baked delights.
-            </td>
+        </section>
 
-            <td>
-                <img src="images/cookies.jpg" alt="Cookies" width="200"><br>
-                <strong>Homemade Cookies</strong><br>
-                Crispy on the outside, soft inside.
-            </td>
-        </tr>
-    </table>
+        <!-- ABOUT SECTION -->
+        <section class="about-preview">
 
-    <hr>
+            <div class="section-heading">
+                <h2>About Sweet Crumbs Bakery</h2>
+            </div>
 
-    <!-- CALL TO ACTION -->
-    <h2>Want Something Custom?</h2>
-    <p>We design treats exactly how you want them.</p>
-    <p><a href="custom.html"><button>Place a Custom Order</button></a></p>
+            <article class="about-text">
 
-    <hr>
+                <p>
+                    Sweet Crumbs Bakery is a home-style bakery dedicated to crafting
+                    high-quality cakes, pastries, breads, and desserts for every occasion.
+                    Our bakery combines creativity, quality ingredients, and warm customer
+                    service to create treats that bring joy to every customer.
+                </p>
 
-    <!-- CONTACT PREVIEW -->
-    <h2>Contact Us</h2>
-    <p>Email: sweetcrumbs@email.com</p>
-    <p>Phone: 012 345 6789</p>
+                <p>
+                    Whether you are celebrating a birthday, wedding, graduation,
+                    or simply treating yourself, we create memorable baked goods
+                    tailored to your taste.
+                </p>
 
-</main>
+            </article>
 
-<hr>
+        </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>&copy; 2026 Sweet Crumbs Bakery</p>
-</footer>
+        <!-- FEATURED PRODUCTS SECTION -->
+        <section class="featured-products">
+
+            <div class="section-heading">
+                <h2>Customer Favourites</h2>
+                <p>Freshly baked daily with care and creativity.</p>
+            </div>
+
+            <!-- Product Cards Container -->
+            <div class="product-grid">
+
+                <!-- Product Card 1 -->
+                <article class="product-card">
+
+                    <img src="images/cake.jpg" alt="Custom Celebration Cake">
+
+                    <div class="product-info">
+                        <h3>Custom Celebration Cakes</h3>
+
+                        <p>
+                            Beautiful custom-designed cakes made for birthdays,
+                            weddings, and unforgettable events.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+
+                    <img src="images/cupcakes.jpg" alt="Fresh Cupcakes">
+
+                    <div class="product-info">
+                        <h3>Fresh Cupcakes</h3>
+
+                        <p>
+                            Soft, fluffy cupcakes available in a variety
+                            of delicious flavours and toppings.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+
+                    <img src="images/pastries.jpg" alt="Assorted Pastries">
+
+                    <div class="product-info">
+                        <h3>Assorted Pastries</h3>
+
+                        <p>
+                            Freshly baked pastries made daily for the perfect
+                            morning or afternoon treat.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- Product Card 4 -->
+                <article class="product-card">
+
+                    <img src="images/cookies.jpg" alt="Homemade Cookies">
+
+                    <div class="product-info">
+                        <h3>Homemade Cookies</h3>
+
+                        <p>
+                            Crispy on the outside and soft on the inside,
+                            our cookies are baked fresh every day.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- SPECIAL ORDER SECTION -->
+        <section class="custom-order-section">
+
+            <div class="custom-content">
+
+                <h2>Looking for Something Custom?</h2>
+
+                <p>
+                    We create personalised cakes and dessert packages
+                    designed to perfectly match your celebration and style.
+                </p>
+
+                <a href="custom.html" class="btn">
+                    Place a Custom Order
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT PREVIEW SECTION -->
+        <section class="contact-preview">
+
+            <div class="section-heading">
+                <h2>Visit or Contact Us</h2>
+            </div>
+
+            <div class="contact-info">
+
+                <p><strong>Email:</strong> sweetcrumbs@email.com</p>
+
+                <p><strong>Phone:</strong> 012 345 6789</p>
+
+                <p><strong>Location:</strong> Johannesburg, South Africa</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+
+        <p>
+            &copy; 2026 Sweet Crumbs Bakery |
+            Freshly baked with love every day.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
+

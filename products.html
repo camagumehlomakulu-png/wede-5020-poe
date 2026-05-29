@@ -1,169 +1,520 @@
-<header>
-    <h1>Sweet Crumbs Bakery</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="products.html">Products</a> |
-        <a href="custom.html">Custom Orders</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+<head>
 
-<hr>
-<main>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>Our Menu</h2>
-<p>Freshly baked goods made with care and quality ingredients.</p>
+    <!-- Page Title -->
+    <title>Sweet Crumbs Bakery | Products</title>
 
-<hr>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<!-- CAKES -->
-<h2>Cakes</h2>
-<table>
-<tr>
-<td>
-<img src="images/chocolate_cake.jpg" width="200"><br>
-<strong>Chocolate Cake</strong><br>
-R180<br>
-Best Seller<br>
-<a href="custom.html">Order Now</a>
-</td>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-<td>
-<img src="images/vanilla_cake.jpg" width="200"><br>
-<strong>Vanilla Cake</strong><br>
-R160<br>
-<a href="custom.html">Order Now</a>
-</td>
+</head>
 
-<td>
-<img src="images/red_velvet.jpg" width="200"><br>
-<strong>Red Velvet Cake</strong><br>
-R190<br>
-Best Seller<br>
-<a href="custom.html">Order Now</a>
-</td>
+<body class="products-page">
 
-<td>
-<img src="images/carrot_cake.jpg" width="200"><br>
-<strong>Carrot Cake</strong><br>
-R170<br>
-<a href="custom.html">Order Now</a>
-</td>
-</tr>
-</table>
+    <!-- HEADER -->
+    <header>
 
-<hr>
+        <!-- Navigation -->
+        <nav class="navbar">
 
-<!-- BREADS -->
-<h2>Breads</h2>
-<table>
-<tr>
-<td>
-<img src="images/white_bread.jpg" width="200"><br>
-<strong>White Bread</strong><br>
-R30<br>
-<a href="custom.html">Order Now</a>
-</td>
+            <h1 class="logo">Sweet Crumbs Bakery</h1>
 
-<td>
-<img src="images/brown_bread.jpg" width="200"><br>
-<strong>Brown Bread</strong><br>
-R35<br>
-Best Seller<br>
-<a href="custom.html">Order Now</a>
-</td>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="custom.html">Custom Orders</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-<td>
-<img src="images/sourdough.jpg" width="200"><br>
-<strong>Sourdough Bread</strong><br>
-R50<br>
-<a href="custom.html">Order Now</a>
-</td>
+        </nav>
 
-<td>
-<img src="images/garlic_bread.jpg" width="200"><br>
-<strong>Garlic Bread</strong><br>
-R45<br>
-<a href="custom.html">Order Now</a>
-</td>
-</tr>
-</table>
+    </header>
 
-<hr>
+    <!-- MAIN CONTENT -->
+    <main>
 
+        <!-- PRODUCTS HERO -->
+        <section class="page-hero products-hero">
+
+            <div class="page-hero-content">
+
+                <h2>Freshly Baked Every Day</h2>
+
+                <p>
+                    Explore our handcrafted selection of cakes,
+                    breads, pastries, muffins, and sweet treats.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- MENU INTRO -->
+        <section class="menu-intro">
+
+            <div class="section-heading">
+
+                <h2>Our Bakery Menu</h2>
+
+                <p>
+                    Freshly prepared using quality ingredients and homemade recipes.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CAKES SECTION -->
+        <section class="product-category">
+
+            <div class="section-heading">
+                <h2>Cakes</h2>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- Product 1 -->
+                <article class="product-card">
+
+                    <div class="best-seller">Best Seller</div>
+
+                    <img src="images/chocolate_cake.jpg" alt="Chocolate Cake">
+
+                    <div class="product-info">
+
+                        <h3>Chocolate Cake</h3>
+
+                        <p class="price">R180</p>
+
+                        <p>
+                            Rich chocolate sponge layered with creamy chocolate frosting.
+                        </p>
+
+                        <a href="custom.html" class="btn small-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+
+                    <img src="images/vanilla_cake.jpg" alt="Vanilla Cake">
+
+                    <div class="product-info">
+
+                        <h3>Vanilla Cake</h3>
+
+                        <p class="price">R160</p>
+
+                        <p>
+                            Soft vanilla sponge cake finished with smooth buttercream icing.
+                        </p>
+
+                        <a href="custom.html" class="btn small-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+
+                    <div class="best-seller">Best Seller</div>
+
+                    <img src="images/red_velvet.jpg" alt="Red Velvet Cake">
+
+                    <div class="product-info">
+
+                        <h3>Red Velvet Cake</h3>
+
+                        <p class="price">R190</p>
+
+                        <p>
+                            Moist red velvet cake topped with rich cream cheese frosting.
+                        </p>
+
+                        <a href="custom.html" class="btn small-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card">
+
+                    <img src="images/carrot_cake.jpg" alt="Carrot Cake">
+
+                    <div class="product-info">
+
+                        <h3>Carrot Cake</h3>
+
+                        <p class="price">R170</p>
+
+                        <p>
+                            Fresh carrot cake with warm spices and creamy frosting.
+                        </p>
+
+                        <a href="custom.html" class="btn small-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- BREADS SECTION -->
+        <section class="product-category bakery-background">
+
+            <div class="section-heading">
+                <h2>Breads</h2>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <img src="images/white_bread.jpg" alt="White Bread">
+
+                    <div class="product-info">
+
+                        <h3>White Bread</h3>
+
+                        <p class="price">R30</p>
+
+                        <p>
+                            Freshly baked classic white bread made daily.
+                        </p>
+
+                        <a href="custom.html" class="btn small-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="best-seller">Best Seller</div>
+
+                    <img src="images/brown_bread.jpg" alt="Brown Bread">
+
+                    <div class="product-info">
+
+                        <h3>Brown Bread</h3>
+
+                        <p class="price">R35</p>
+
+                        <p>
+                            Healthy and hearty brown bread baked fresh every morning.
+                        </p>
+
+                        <a href="custom.html" class="btn small-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <img src="images/sourdough.jpg" alt="Sourdough Bread">
+
+                    <div class="product-info">
+
+                        <h3>Sourdough Bread</h3>
+
+                        <p class="price">R50</p>
+
+                        <p>
+                            Artisan sourdough bread with a crispy crust and soft interior.
+                        </p>
+
+                        <a href="custom.html" class="btn small-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <img src="images/garlic_bread.jpg" alt="Garlic Bread">
+
+                    <div class="product-info">
+
+                        <h3>Garlic Bread</h3>
+
+                        <p class="price">R45</p>
+
+                        <p>
+                            Freshly baked garlic bread topped with herbs and butter.
+                        </p>
+
+                        <a href="custom.html" class="btn small-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+        ```html id="f3r8vl"
 <!-- MUFFINS & CUPCAKES -->
-<h2>Muffins & Cupcakes</h2>
-<table>
-<tr>
-<td>
-<img src="images/chocolate_muffin.jpg" width="200"><br>
-<strong>Chocolate Muffin</strong><br>
-R25<br>
-<a href="custom.html">Order Now</a>
-</td>
+<section class="product-category">
 
-<td>
-<img src="images/blueberry_muffin.jpg" width="200"><br>
-<strong>Blueberry Muffin</strong><br>
-R30<br>
-Best Seller<br>
-<a href="custom.html">Order Now</a>
-</td>
+    <div class="section-heading">
+        <h2>Muffins & Cupcakes</h2>
+    </div>
 
-<td>
-<img src="images/vanilla_cupcake.jpg" width="200"><br>
-<strong>Vanilla Cupcake</strong><br>
-R20<br>
-<a href="custom.html">Order Now</a>
-</td>
+    <div class="product-grid">
 
-<td>
-<img src="images/red_velvet_cupcake.jpg" width="200"><br>
-<strong>Red Velvet Cupcake</strong><br>
-R25<br>
-Best Seller<br>
-<a href="custom.html">Order Now</a>
-</td>
-</tr>
-</table>
+        <!-- Product 1 -->
+        <article class="product-card">
 
-<hr>
+            <img src="images/chocolate_muffin.jpg" alt="Chocolate Muffin">
+
+            <div class="product-info">
+
+                <h3>Chocolate Muffin</h3>
+
+                <p class="price">R25</p>
+
+                <p>
+                    Rich chocolate muffins baked fresh every morning.
+                </p>
+
+                <a href="custom.html" class="btn small-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+
+            <div class="best-seller">Best Seller</div>
+
+            <img src="images/blueberry_muffin.jpg" alt="Blueberry Muffin">
+
+            <div class="product-info">
+
+                <h3>Blueberry Muffin</h3>
+
+                <p class="price">R30</p>
+
+                <p>
+                    Soft blueberry muffins filled with fresh flavour.
+                </p>
+
+                <a href="custom.html" class="btn small-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+
+            <img src="images/vanilla_cupcake.jpg" alt="Vanilla Cupcake">
+
+            <div class="product-info">
+
+                <h3>Vanilla Cupcake</h3>
+
+                <p class="price">R20</p>
+
+                <p>
+                    Light vanilla cupcakes topped with creamy frosting.
+                </p>
+
+                <a href="custom.html" class="btn small-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+
+            <div class="best-seller">Best Seller</div>
+
+            <img src="images/red_velvet_cupcake.jpg" alt="Red Velvet Cupcake">
+
+            <div class="product-info">
+
+                <h3>Red Velvet Cupcake</h3>
+
+                <p class="price">R25</p>
+
+                <p>
+                    Delicious red velvet cupcakes with smooth cream frosting.
+                </p>
+
+                <a href="custom.html" class="btn small-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 
 <!-- FRENCH DELIGHTS -->
-<h2>French Delights</h2>
-<table>
-<tr>
-<td>
-<img src="images/croissant.jpg" width="200"><br>
-<strong>Croissant</strong><br>
-R28<br>
-Best Seller<br>
-<a href="custom.html">Order Now</a>
-</td>
+<section class="product-category bakery-background">
 
-<td>
-<img src="images/macaron.jpg" width="200"><br>
-<strong>Macarons (Pack)</strong><br>
-R60<br>
-<a href="custom.html">Order Now</a>
-</td>
+    <div class="section-heading">
+        <h2>French Delights</h2>
+    </div>
 
-<td>
-<img src="images/eclair.jpg" width="200"><br>
-<strong>Éclair</strong><br>
-R35<br>
-<a href="custom.html">Order Now</a>
-</td>
+    <div class="product-grid">
 
-<td>
-<img src="images/millefeuille.jpg" width="200"><br>
-<strong>Mille-feuille</strong><br>
-R40<br>
-<a href="custom.html">Order Now</a>
-</td>
-</tr>
-</table>
+        <!-- Product 1 -->
+        <article class="product-card">
 
-</main>
+            <div class="best-seller">Best Seller</div>
+
+            <img src="images/croissant.jpg" alt="Croissant">
+
+            <div class="product-info">
+
+                <h3>Croissant</h3>
+
+                <p class="price">R28</p>
+
+                <p>
+                    Buttery flaky croissants baked fresh every day.
+                </p>
+
+                <a href="custom.html" class="btn small-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+
+            <img src="images/macaron.jpg" alt="Macarons">
+
+            <div class="product-info">
+
+                <h3>Macarons (Pack)</h3>
+
+                <p class="price">R60</p>
+
+                <p>
+                    Colourful French macarons with delicate fillings.
+                </p>
+
+                <a href="custom.html" class="btn small-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+
+            <img src="images/eclair.jpg" alt="Eclair">
+
+            <div class="product-info">
+
+                <h3>Éclair</h3>
+
+                <p class="price">R35</p>
+
+                <p>
+                    Classic French éclairs filled with smooth pastry cream.
+                </p>
+
+                <a href="custom.html" class="btn small-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+
+            <img src="images/millefeuille.jpg" alt="Mille-feuille">
+
+            <div class="product-info">
+
+                <h3>Mille-feuille</h3>
+
+                <p class="price">R40</p>
+
+                <p>
+                    Crispy layered pastry finished with delicate cream filling.
+                </p>
+
+                <a href="custom.html" class="btn small-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+```
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Sweet Crumbs Bakery |
+            Freshly baked with love every day.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
