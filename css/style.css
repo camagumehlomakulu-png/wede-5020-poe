@@ -519,19 +519,29 @@ footer{
 }
 
 /* =========================
-   PRODUCTS PAGE HERO
+   PRODUCTS HERO BACKGROUND
 ========================= */
-
 .products-hero{
-    background:
-    linear-gradient(rgba(0,0,0,0.55),
-    rgba(0,0,0,0.55)),
-    url('../images/products-bg.jpg');
 
-    background-size:cover;
-    background-position:center;
+background:
+
+linear-gradient(
+
+rgba(0,0,0,0.45),
+
+rgba(0,0,0,0.45)
+
+),
+
+url('../images/products-bg.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
 }
-
 /* =========================
    MENU INTRO
 ========================= */
@@ -544,21 +554,27 @@ footer{
 /* =========================
    PRODUCT CATEGORY
 ========================= */
-
-.product-category{
-    background:#fff8f0;
-}
-
 .bakery-background{
-    background:
-    linear-gradient(rgba(255,248,240,0.92),
-    rgba(255,248,240,0.92)),
-    url('../images/bread-bg.jpg');
 
-    background-size:cover;
-    background-position:center;
+background:
+
+linear-gradient(
+
+rgba(255,248,240,0.75),
+
+rgba(255,248,240,0.75)
+
+),
+
+url('../images/bread-bg.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
 }
-
 /* =========================
    PRODUCT PRICE
 ========================= */
@@ -610,13 +626,17 @@ footer{
    CUSTOM ORDERS PAGE
 ========================= */
 
-/* Page hero */
 .page-hero{
     padding:4rem 8%;
     text-align:center;
-    background:linear-gradient(
-        rgba(255,248,240,0.9),
-        rgba(243,210,193,0.6)
+}
+
+/* Only Custom Orders page uses this */
+body.custom-page .page-hero{
+    background:
+    linear-gradient(
+    rgba(255,248,240,0.9),
+    rgba(243,210,193,0.6)
     );
 }
 
@@ -872,67 +892,6 @@ footer{
         padding:3rem 5%;
     }
 }
-/* =========================
-   DARK MODE SYSTEM (FIXED FOR ALL PAGES)
-========================= */
-
-body.dark-mode{
-    --bg:#1e1a18;
-    --text:#f5f5f5;
-    --card:#2a2422;
-    --accentText:#f3d2c1;
-}
-
-/* APPLY BASE THEME */
-body{
-    background:var(--bg, #fff8f0);
-    color:var(--text, #2e1f1a);
-    transition:0.3s ease;
-}
-
-/* NAVBAR */
-body.dark-mode .navbar{
-    background:#2a2422;
-    box-shadow:0 2px 10px rgba(0,0,0,0.5);
-}
-
-/* NAV LINKS */
-body.dark-mode .nav-links a{
-    color:var(--text);
-}
-
-body.dark-mode .nav-links a:hover{
-    color:var(--secondary);
-}
-
-/* LOGO */
-body.dark-mode .logo{
-    color:var(--accentText);
-}
-
-/* CARDS + BOXES (COVERS ALL PAGES PROPERLY) */
-.product-card,
-.contact-box,
-.hours-box,
-.stat,
-.order-form,
-.panel,
-.gallery img{
-    background:var(--card);
-    color:inherit;
-}
-
-/* ❌ REMOVED GLOBAL TEXT OVERRIDE (THIS WAS YOUR BUG) */
-
-/* BUTTONS */
-body.dark-mode .btn{
-    background:#d9a066;
-    color:#1e1a18;
-}
-
-body.dark-mode .btn:hover{
-    background:#f3d2c1;
-}
 
 /* =========================
    BACK TO TOP BUTTON
@@ -1067,103 +1026,455 @@ button:hover,
     background:var(--secondary);
     transform:translateY(-2px);
 }
-/* =========================
-   DARK MODE (FINAL FIXED SYSTEM)
-========================= */
+/* ==================================
+   SWEET CRUMBS FINAL DARK MODE
+================================== */
 
-:root {
-    --dm-bg: #1b1412;
-    --dm-text: #f5f0ea;
+:root{
 
-    --dm-1: rgba(35, 22, 20, 0.55);
-    --dm-2: rgba(45, 28, 25, 0.55);
-    --dm-3: rgba(28, 18, 16, 0.55);
+--dm-background:#241715;
 
-    --dm-card: rgba(55, 38, 34, 0.85);
+--dm-section1:#34211d;
+
+--dm-section2:#412923;
+
+--dm-section3:#2d1d19;
+
+--dm-card:#4a302a;
+
+--dm-navbar:#2a1b18;
+
+--dm-text:#fff7f0;
+
+--dm-accent:#e7b07d;
+
 }
 
-/* BASE */
-body.dark-mode {
-    background: var(--dm-bg);
-    color: var(--dm-text);
-    transition: 0.3s ease;
+
+/* BODY */
+
+body.dark-mode{
+
+background:var(--dm-background);
+
+color:var(--dm-text);
+
 }
 
-/* TEXT */
-body.dark-mode p,
-body.dark-mode li,
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode span {
-    color: var(--dm-text);
-}
 
 /* NAVBAR */
-body.dark-mode .navbar {
-    background: rgba(30, 18, 16, 0.9);
-    backdrop-filter: blur(10px);
+
+body.dark-mode .navbar{
+
+background:rgba(42,27,24,0.95);
+
+backdrop-filter:blur(8px);
+
 }
 
-/* =========================
-   SECTION VARIATIONS (FIXES FLAT LOOK)
-========================= */
 
-body.dark-mode .about-section,
-body.dark-mode .info-section {
-    background: var(--dm-1) !important;
+/* LOGO */
+
+body.dark-mode .logo{
+
+color:#ffd6b5;
+
 }
+
+
+/* LINKS */
+
+body.dark-mode .nav-links a{
+
+color:var(--dm-text);
+
+}
+
+body.dark-mode .nav-links a:hover{
+
+color:var(--dm-accent);
+
+}
+
+
+/* ==================================
+   DIFFERENT SECTION SHADES
+================================== */
+
+body.dark-mode .about-preview,
+body.dark-mode .menu-intro,
+body.dark-mode .info-section,
+body.dark-mode .contact-section,
+body.dark-mode .faq-section{
+
+background:var(--dm-section1);
+
+}
+
 
 body.dark-mode .mission-section,
+body.dark-mode .product-category,
+body.dark-mode .form-section,
 body.dark-mode .stats-section,
-body.dark-mode .form-section {
-    background: var(--dm-2) !important;
+body.dark-mode .hours-section{
+
+background:var(--dm-section2);
+
 }
+
 
 body.dark-mode .experience-section,
 body.dark-mode .ideas-section,
 body.dark-mode .gallery-section,
-body.dark-mode .custom-order-section {
-    background: var(--dm-3) !important;
+body.dark-mode .custom-order-section{
+
+background:var(--dm-section3);
+
 }
 
-/* HERO OVERLAY FIX (IMAGES NOW VISIBLE) */
-body.dark-mode .hero::before,
-body.dark-mode .about-hero::before,
-body.dark-mode .products-hero::before,
-body.dark-mode .page-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(10, 6, 5, 0.35);
-}
 
-/* CARDS */
+/* ==================================
+   CARDS + BOXES
+================================== */
+
 body.dark-mode .product-card,
+
 body.dark-mode .goal-card,
-body.dark-mode .stat,
+
 body.dark-mode .contact-box,
+
 body.dark-mode .hours-box,
+
+body.dark-mode .stat,
+
 body.dark-mode .order-form,
+
 body.dark-mode .panel,
+
 body.dark-mode .experience-content,
-body.dark-mode .page-hero-content {
-    background: var(--dm-card);
-    color: var(--dm-text);
-    backdrop-filter: blur(6px);
+
+body.dark-mode .page-hero-content{
+    background:rgba(255,255,255,0.18);
+
+    backdrop-filter:blur(5px);
+
+    border:1px solid rgba(255,255,255,0.25);
+}
+.products-hero .page-hero-content{
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(4px);
+
 }
 
-/* IMAGES FIX (THIS WAS BREAKING VISIBILITY) */
-body.dark-mode img {
-    filter: brightness(0.9) contrast(1.05);
+
+/* ==================================
+   FORMS
+================================== */
+
+body.dark-mode input,
+
+body.dark-mode textarea,
+
+body.dark-mode select{
+
+background:#2b1d1a;
+
+color:var(--dm-text);
+
+border:1px solid #6b4a42;
+
 }
 
-/* BUTTONS */
-body.dark-mode .btn {
-    background: #c07a4a;
-    color: #1a120f;
+
+body.dark-mode input::placeholder,
+
+body.dark-mode textarea::placeholder{
+
+color:#d7c3b9;
+
 }
 
-body.dark-mode .btn:hover {
-    background: #e0a070;
+
+/* ==================================
+   HERO IMAGE OVERLAYS
+================================== */
+
+body.dark-mode .hero{
+
+background:
+
+linear-gradient(
+
+rgba(0,0,0,0.72),
+
+rgba(20,10,8,0.72)
+
+),
+
+url('../images/bakery-bg.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+
+body.dark-mode .about-hero{
+
+background-image:
+
+linear-gradient(
+
+rgba(0,0,0,0.72),
+
+rgba(20,10,8,0.72)
+
+),
+
+url('../images/about-bg.jpg');
+
+}
+
+
+body.dark-mode .products-hero{
+
+background:
+
+linear-gradient(
+
+rgba(0,0,0,0.72),
+
+rgba(20,10,8,0.72)
+
+),
+
+url('../images/products-bg.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+
+/* ==================================
+   TEXT
+================================== */
+
+body.dark-mode h1,
+
+body.dark-mode h2,
+
+body.dark-mode h3,
+
+body.dark-mode p,
+
+body.dark-mode li,
+
+body.dark-mode span{
+
+color:var(--dm-text);
+
+}
+
+
+/* ==================================
+   BUTTONS
+================================== */
+
+body.dark-mode .btn{
+
+background:#c8824f;
+
+color:#fff;
+
+}
+
+
+body.dark-mode .btn:hover{
+
+background:#e7b07d;
+
+}
+
+
+/* ==================================
+   SMOOTH TRANSITIONS
+================================== */
+
+body,
+
+section,
+
+.navbar,
+
+.product-card,
+
+.goal-card,
+
+.contact-box,
+
+.hours-box,
+
+.order-form,
+
+.btn{
+
+transition:
+
+background 0.4s ease,
+
+color 0.4s ease,
+
+transform 0.3s ease;
+
+}
+/* ==========================
+   ABOUT PAGE FIX
+========================== */
+
+body.dark-mode .about-section{
+    background:var(--dm-section1);
+}
+
+body.dark-mode .about-container{
+    background:transparent;
+}
+
+body.dark-mode .about-text-content{
+    background:rgba(45,30,26,0.65);
+    padding:2rem;
+    border-radius:20px;
+}
+
+body.dark-mode .about-text-content h2,
+body.dark-mode .about-text-content p{
+    color:var(--dm-text);
+}
+
+body.dark-mode .about-image img{
+    filter:brightness(0.8) contrast(1.05);
+}
+/* ==========================
+   CUSTOM ORDERS PAGE FIX
+========================== */
+
+body.dark-mode .process-section{
+
+background:var(--dm-section2);
+
+}
+
+body.dark-mode .process-steps p{
+
+background:rgba(74,48,42,0.9);
+
+color:var(--dm-text);
+
+border:1px solid rgba(255,255,255,0.08);
+
+}
+
+body.dark-mode .process-section h2{
+
+color:#ffd6b5;
+
+}
+
+body.dark-mode .process-steps{
+
+gap:1.2rem;
+
+}
+/* ==========================
+   PRODUCTS PAGE IMAGE FIX
+========================== */
+
+body.dark-mode .products-hero{
+
+background:
+
+linear-gradient(
+
+rgba(10,5,5,0.75),
+
+rgba(30,15,10,0.75)
+
+),
+
+url('../images/products-bg.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+}
+
+body.dark-mode .bakery-background{
+
+background:
+
+linear-gradient(
+
+rgba(25,15,12,0.65),
+
+rgba(35,20,18,0.65)
+
+),
+
+url('../images/bread-bg.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+}
+/* =========================
+   MUFFINS SECTION
+========================= */
+
+.muffins-background{
+
+background:
+
+linear-gradient(
+rgba(255,248,240,0.85),
+rgba(255,248,240,0.85)
+),
+
+url('../images/muffins-bg.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+
+/* =========================
+   FRENCH DELIGHTS SECTION
+========================= */
+
+.french-background{
+
+background:
+
+linear-gradient(
+rgba(255,248,240,0.85),
+rgba(255,248,240,0.85)
+),
+
+url('../images/french-bg.jpg');
+
+background-size:cover;
+
+background-position:center;
+
 }
