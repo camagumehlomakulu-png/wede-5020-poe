@@ -14,11 +14,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="contact-page">
 
 <!-- HEADER -->
 <header>
-
     <nav class="navbar">
 
         <h1 class="logo">Sweet Crumbs Bakery</h1>
@@ -31,53 +30,54 @@
             <a href="contact.html">Contact</a>
         </div>
 
-    </nav>
+        <!-- DARK MODE BUTTON (IMPORTANT FIX) -->
+        <button id="darkToggle" class="dark-toggle">Dark Mode</button>
 
+    </nav>
 </header>
 
 <main>
 
-    <!-- PAGE HEADER -->
+    <!-- HERO -->
     <section class="page-hero">
-
         <div class="section-heading">
             <h2>Contact Us</h2>
-            <p>We’d love to hear from you — place orders or ask questions anytime.</p>
+            <p>We’d love to hear from you — orders, questions, or feedback.</p>
         </div>
-
     </section>
 
     <!-- CONTACT INFO -->
     <section class="contact-section">
 
         <div class="contact-box">
-
             <h3>Our Details</h3>
 
             <p><strong>Email:</strong> sweetcrumbs@email.com</p>
             <p><strong>Phone:</strong> 064 624 4320</p>
             <p><strong>Location:</strong> Johannesburg, South Africa</p>
-
         </div>
 
     </section>
 
-    <!-- FORM -->
+    <!-- CONTACT FORM -->
     <section class="form-section">
 
         <h2>Send Us a Message</h2>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
 
-            <input type="text" placeholder="Full Name" required>
+            <input type="text" name="name" placeholder="Full Name" required>
 
-            <input type="email" placeholder="Email Address" required>
+            <input type="email" name="email" placeholder="Email Address" required>
 
-            <input type="text" placeholder="Subject">
+            <input type="text" name="subject" placeholder="Subject">
 
-            <textarea rows="6" placeholder="Your Message"></textarea>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
 
             <button type="submit" class="btn">Send Message</button>
+
+            <!-- FORM MESSAGE (JS FEEDBACK) -->
+            <p id="formMessage"></p>
 
         </form>
 
@@ -89,24 +89,25 @@
         <h2>Opening Hours</h2>
 
         <div class="hours-box">
-
             <p>Monday – Friday: 08:00 – 17:00</p>
             <p>Saturday: 09:00 – 14:00</p>
             <p>Sunday: Closed</p>
-
         </div>
 
     </section>
 
 </main>
 
+<!-- BACK TO TOP BUTTON -->
+<button id="topBtn" aria-label="Back to top">⬆</button>
+
 <!-- FOOTER -->
 <footer>
-
     <p>&copy; 2026 Sweet Crumbs Bakery | Freshly baked with love every day</p>
-
 </footer>
 
-</body>
+<!-- JS -->
+<script src="js/script.js"></script>
 
+</body>
 </html>

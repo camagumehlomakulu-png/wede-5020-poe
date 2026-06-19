@@ -270,15 +270,14 @@ footer{
     }
 
 }
-
 /* =========================
    ABOUT PAGE HERO
 ========================= */
 
 .about-hero{
     background-image:
-    linear-gradient(rgba(0,0,0,0.7),
-    rgba(0,0,0,0.7)),
+    linear-gradient(rgba(0,0,0,0.75),
+    rgba(143, 137, 137, 0.75)),
     url('../images/about-bg.jpg');
 
     background-size:cover;
@@ -294,40 +293,67 @@ footer{
     align-items:center;
 
     text-align:center;
-    color:white;
+
     padding:2rem;
+
+    color:white;
 }
 
 .page-hero-content{
-    background:rgba(255,255,255,0.12);
+    max-width:750px;
 
-    padding:2.5rem;
+    background:rgba(0,0,0,0.45);
+
+    padding:3rem;
 
     border-radius:25px;
 
-    backdrop-filter:blur(4px);
+    backdrop-filter:blur(5px);
 
-    max-width:700px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
 
 .page-hero-content h2{
-    color:#fff8f0;
-
-    font-size:3.5rem;
+    font-size:3.8rem;
 
     margin-bottom:1rem;
 
-    text-shadow:2px 2px 10px rgba(0,0,0,0.5);
+    color:#ffffff;
+
+    text-shadow:2px 2px 10px rgba(0,0,0,0.6);
 }
 
 .page-hero-content p{
-    color:#f5e6dc;
-
-    font-size:1.1rem;
+    font-size:1.15rem;
 
     line-height:1.8;
+
+    color:#f8f8f8;
+}
+
+/* =========================
+   RESPONSIVE HERO
+========================= */
+
+@media(max-width:768px){
+
+    .page-hero{
+        height:auto;
+        padding:6rem 2rem;
+    }
+
+    .page-hero-content{
+        padding:2rem;
+    }
+
+    .page-hero-content h2{
+        font-size:2.5rem;
+    }
+
+    .page-hero-content p{
+        font-size:1rem;
+    }
+
 }
 
 /* =========================
@@ -777,7 +803,6 @@ footer{
    CONTACT PAGE STYLES
 ========================= */
 
-/* Contact info box */
 .contact-section{
     padding:4rem 8%;
     background:var(--cream);
@@ -798,7 +823,6 @@ footer{
     color:var(--primary);
 }
 
-/* Contact form */
 .contact-form{
     max-width:600px;
     margin:auto;
@@ -822,7 +846,6 @@ footer{
     box-shadow:0 0 8px rgba(217,160,102,0.3);
 }
 
-/* Opening hours */
 .hours-section{
     padding:4rem 8%;
     background:var(--accent);
@@ -838,12 +861,309 @@ footer{
     box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
-/* Responsive */
-@media (max-width:768px){
+/* =========================
+   RESPONSIVE
+========================= */
 
+@media (max-width:768px){
     .contact-section,
     .form-section,
     .hours-section{
         padding:3rem 5%;
     }
+}
+/* =========================
+   DARK MODE SYSTEM (FIXED FOR ALL PAGES)
+========================= */
+
+body.dark-mode{
+    --bg:#1e1a18;
+    --text:#f5f5f5;
+    --card:#2a2422;
+    --accentText:#f3d2c1;
+}
+
+/* APPLY BASE THEME */
+body{
+    background:var(--bg, #fff8f0);
+    color:var(--text, #2e1f1a);
+    transition:0.3s ease;
+}
+
+/* NAVBAR */
+body.dark-mode .navbar{
+    background:#2a2422;
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* NAV LINKS */
+body.dark-mode .nav-links a{
+    color:var(--text);
+}
+
+body.dark-mode .nav-links a:hover{
+    color:var(--secondary);
+}
+
+/* LOGO */
+body.dark-mode .logo{
+    color:var(--accentText);
+}
+
+/* CARDS + BOXES (COVERS ALL PAGES PROPERLY) */
+.product-card,
+.contact-box,
+.hours-box,
+.stat,
+.order-form,
+.panel,
+.gallery img{
+    background:var(--card);
+    color:inherit;
+}
+
+/* ❌ REMOVED GLOBAL TEXT OVERRIDE (THIS WAS YOUR BUG) */
+
+/* BUTTONS */
+body.dark-mode .btn{
+    background:#d9a066;
+    color:#1e1a18;
+}
+
+body.dark-mode .btn:hover{
+    background:#f3d2c1;
+}
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+
+#topBtn{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:12px 15px;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+    font-size:18px;
+    z-index:1000;
+    transition:0.3s;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-section{
+    text-align:center;
+    background:var(--cream);
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:2rem;
+}
+
+.stat{
+    padding:2rem;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section{
+    background:#fffdf9;
+    text-align:center;
+}
+
+.accordion{
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+    padding:1rem;
+    width:100%;
+    border:none;
+    text-align:left;
+    border-radius:8px;
+    margin-bottom:0.5rem;
+    font-size:1rem;
+}
+
+.panel{
+    max-height:0;
+    overflow:hidden;
+    transition:0.3s ease;
+    background:var(--card);
+    padding:0 1rem;
+    border-radius:8px;
+}
+
+.panel.open{
+    max-height:300px;
+    padding:1rem;
+}
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+section{
+    transition:0.6s ease;
+}
+
+section.hidden{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button,
+.btn{
+    transition:0.3s ease;
+}
+
+button:hover,
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   DARK MODE BUTTON
+========================= */
+
+.dark-toggle{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:0.6rem 1.2rem;
+    border-radius:25px;
+    cursor:pointer;
+    font-family:inherit;
+    font-weight:500;
+    transition:0.3s ease;
+}
+
+.dark-toggle:hover{
+    background:var(--secondary);
+    transform:translateY(-2px);
+}
+/* =========================
+   DARK MODE (FINAL FIXED SYSTEM)
+========================= */
+
+:root {
+    --dm-bg: #1b1412;
+    --dm-text: #f5f0ea;
+
+    --dm-1: rgba(35, 22, 20, 0.55);
+    --dm-2: rgba(45, 28, 25, 0.55);
+    --dm-3: rgba(28, 18, 16, 0.55);
+
+    --dm-card: rgba(55, 38, 34, 0.85);
+}
+
+/* BASE */
+body.dark-mode {
+    background: var(--dm-bg);
+    color: var(--dm-text);
+    transition: 0.3s ease;
+}
+
+/* TEXT */
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode span {
+    color: var(--dm-text);
+}
+
+/* NAVBAR */
+body.dark-mode .navbar {
+    background: rgba(30, 18, 16, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+/* =========================
+   SECTION VARIATIONS (FIXES FLAT LOOK)
+========================= */
+
+body.dark-mode .about-section,
+body.dark-mode .info-section {
+    background: var(--dm-1) !important;
+}
+
+body.dark-mode .mission-section,
+body.dark-mode .stats-section,
+body.dark-mode .form-section {
+    background: var(--dm-2) !important;
+}
+
+body.dark-mode .experience-section,
+body.dark-mode .ideas-section,
+body.dark-mode .gallery-section,
+body.dark-mode .custom-order-section {
+    background: var(--dm-3) !important;
+}
+
+/* HERO OVERLAY FIX (IMAGES NOW VISIBLE) */
+body.dark-mode .hero::before,
+body.dark-mode .about-hero::before,
+body.dark-mode .products-hero::before,
+body.dark-mode .page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 6, 5, 0.35);
+}
+
+/* CARDS */
+body.dark-mode .product-card,
+body.dark-mode .goal-card,
+body.dark-mode .stat,
+body.dark-mode .contact-box,
+body.dark-mode .hours-box,
+body.dark-mode .order-form,
+body.dark-mode .panel,
+body.dark-mode .experience-content,
+body.dark-mode .page-hero-content {
+    background: var(--dm-card);
+    color: var(--dm-text);
+    backdrop-filter: blur(6px);
+}
+
+/* IMAGES FIX (THIS WAS BREAKING VISIBILITY) */
+body.dark-mode img {
+    filter: brightness(0.9) contrast(1.05);
+}
+
+/* BUTTONS */
+body.dark-mode .btn {
+    background: #c07a4a;
+    color: #1a120f;
+}
+
+body.dark-mode .btn:hover {
+    background: #e0a070;
 }

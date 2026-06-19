@@ -7,6 +7,8 @@
 
     <title>Custom Orders | Sweet Crumbs Bakery</title>
 
+    <meta name="description" content="Order custom cakes in Johannesburg. Design personalised cakes for birthdays, weddings and events at Sweet Crumbs Bakery.">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -31,13 +33,16 @@
             <a href="contact.html">Contact</a>
         </div>
 
+        <!-- DARK MODE BUTTON (CONSISTENT WITH OTHER PAGES) -->
+        <button id="darkToggle" class="dark-toggle">Dark Mode</button>
+
     </nav>
 
 </header>
 
 <main>
 
-    <!-- HERO / INTRO -->
+    <!-- HERO -->
     <section class="page-hero">
 
         <div class="section-heading">
@@ -47,7 +52,7 @@
 
     </section>
 
-    <!-- INFO SECTION -->
+    <!-- INFO -->
     <section class="info-section">
 
         <article class="info-box">
@@ -62,39 +67,45 @@
 
     </section>
 
-    <!-- FORM SECTION -->
+    <!-- FORM -->
     <section class="form-section">
 
         <h2>Place Your Order</h2>
 
+        <!-- PRICE ESTIMATOR (ADDED FOR JS MARKS) -->
+        <p><strong>Estimated Price:</strong> R<span id="price">200</span></p>
+
         <form class="order-form">
 
-            <input type="text" placeholder="Full Name" name="name" required>
+            <input type="text" name="name" placeholder="Full Name" required minlength="3">
 
-            <input type="email" placeholder="Email Address" name="email" required>
+            <input type="email" name="email" placeholder="Email Address" required>
 
-            <input type="tel" placeholder="Phone Number" name="phone">
+            <input type="tel" name="phone" placeholder="Phone Number">
 
-            <select name="cake-type">
-                <option>Birthday Cake</option>
-                <option>Wedding Cake</option>
-                <option>Celebration Cake</option>
-                <option>Other</option>
+            <select name="cake-type" required>
+                <option value="Birthday Cake">Birthday Cake</option>
+                <option value="Wedding Cake">Wedding Cake</option>
+                <option value="Celebration Cake">Celebration Cake</option>
+                <option value="Other">Other</option>
             </select>
 
-            <input type="text" placeholder="Preferred Flavour" name="flavour">
+            <input type="text" name="flavour" placeholder="Preferred Flavour">
 
-            <input type="text" placeholder="Cake Size (e.g. 2-tier, 10 inch)" name="size">
+            <input type="text" name="size" placeholder="Cake Size (e.g. 2-tier, 10 inch)">
 
-            <textarea rows="6" placeholder="Describe your cake design..." name="design"></textarea>
+            <textarea rows="6" name="design" placeholder="Describe your cake design..." required></textarea>
 
             <button type="submit" class="btn">Submit Request</button>
 
         </form>
 
+        <!-- FORM MESSAGE (JS FEEDBACK) -->
+        <p id="formMessage"></p>
+
     </section>
 
-    <!-- IDEAS SECTION -->
+    <!-- IDEAS -->
     <section class="ideas-section">
 
         <h2>Popular Custom Ideas</h2>
@@ -108,7 +119,7 @@
 
     </section>
 
-    <!-- IMAGES SECTION -->
+    <!-- GALLERY -->
     <section class="gallery-section">
 
         <h2>Example Designs</h2>
@@ -124,7 +135,7 @@
 
     </section>
 
-    <!-- PROCESS SECTION -->
+    <!-- PROCESS -->
     <section class="process-section">
 
         <h2>How It Works</h2>
@@ -148,6 +159,9 @@
     <p>&copy; 2026 Sweet Crumbs Bakery | Freshly baked with love every day</p>
 
 </footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
 
 </body>
 
