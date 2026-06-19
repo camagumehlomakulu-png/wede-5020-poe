@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Place enquiries for custom cakes, bakery orders and event catering at Sweet Crumbs Bakery in Johannesburg.">
+
+    <meta name="keywords"
+          content="bakery enquiry, custom cake order, Johannesburg bakery, cake booking, dessert orders">
+
+    <meta name="author"
+          content="Sweet Crumbs Bakery">
+
+    <title>Sweet Crumbs Bakery | Enquiry</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="enquiry-page">
+
+<!-- HEADER -->
+<header>
+
+<nav class="navbar">
+
+<h1 class="logo">
+Sweet Crumbs Bakery
+</h1>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="custom.html">Custom Orders</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+<a href="enquiry.html">Enquiry</a>
+
+</div>
+
+<button id="darkToggle" class="dark-toggle">
+Dark Mode
+</button>
+
+</nav>
+
+</header>
+
+<!-- MAIN -->
+<main>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>Place Your Enquiry</h2>
+
+<p>
+Tell us what you need — whether it's a custom cake, event catering, or special order request.
+We’ll get back to you with availability and pricing 🍰
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FORM SECTION -->
+<section class="form-section">
+
+<h2>Enquiry Form</h2>
+
+<form id="enquiryForm">
+
+<!-- NAME -->
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" required minlength="3">
+
+<!-- EMAIL -->
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+
+<!-- PHONE -->
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+<!-- SERVICE TYPE -->
+<label for="service">What are you enquiring about?</label>
+<select id="service" name="service" required>
+    <option value="">-- Select an option --</option>
+    <option value="wedding cake">Wedding Cake</option>
+    <option value="birthday cake">Birthday Cake</option>
+    <option value="cupcakes">Cupcakes</option>
+    <option value="pastries">Pastries</option>
+    <option value="event catering">Event Catering</option>
+</select>
+
+<!-- DATE -->
+<label for="date">Preferred Date</label>
+<input type="date" id="date" name="date" required>
+
+<!-- MESSAGE -->
+<label for="message">Your Message</label>
+<textarea id="message" name="message" rows="6" required
+          placeholder="Tell us more about your order..."></textarea>
+
+<!-- SUBMIT -->
+<button type="submit" class="btn">Submit Enquiry</button>
+
+</form>
+
+<!-- RESPONSE -->
+<p id="responseMessage"></p>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+<p>
+&copy; 2026 Sweet Crumbs Bakery | Enquiries handled with love and care 🍰
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

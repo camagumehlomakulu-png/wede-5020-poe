@@ -106,3 +106,67 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+document.getElementById("enquiryForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let service = document.getElementById("service").value;
+    let date = document.getElementById("date").value;
+
+    let message = document.getElementById("responseMessage");
+
+    if(name.length < 3){
+        message.textContent = "Please enter a valid name.";
+        message.style.color = "red";
+        return;
+    }
+
+    message.textContent =
+        `Thank you ${name}! Your enquiry for "${service}" on ${date} has been received. We'll contact you soon 🍰`;
+
+    message.style.color = "green";
+
+    this.reset();
+});
+// =========================
+// PRODUCT SEARCH FILTER
+// =========================
+
+const searchInput = document.getElementById("productSearch");
+
+if (searchInput) {
+    searchInput.addEventListener("keyup", function () {
+        let value = this.value.toLowerCase();
+        let products = document.querySelectorAll(".product-card");
+
+        products.forEach(product => {
+            let text = product.textContent.toLowerCase();
+
+            if (text.includes(value)) {
+                product.style.display = "block";
+            } else {
+                product.style.display = "none";
+            }
+        });
+    });
+}
+// =========================
+// LIGHTBOX IMAGE VIEWER
+// =========================
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+
+if (lightbox) {
+    document.querySelectorAll(".product-card img").forEach(img => {
+        img.addEventListener("click", () => {
+            lightbox.classList.add("show");
+            lightboxImg.src = img.src;
+        });
+    });
+
+    // close when clicking outside image
+    lightbox.addEventListener("click", () => {
+        lightbox.classList.remove("show");
+    });
+}
